@@ -1,0 +1,337 @@
+/* About Me */
+.about_me {
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada elemen parent */
+	background-image: url("image/wall_about-me.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.about_me::before {
+	content: ""; /* Menambahkan konten pseudo-element */
+	position: absolute; /* Menetapkan posisi absolut untuk pseudo-element */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Warna hitam dengan tingkat transparansi 0.5 (Anda dapat menyesuaikan nilai alpha) */
+}
+.about_name_header {
+	margin-top: 200px;
+}
+.halo {
+	font-size: 50px;
+	font-family: "Agbalumo";
+	color: white;
+}
+.halo_p {
+	font-size: 20px;
+	font-family: "Agbalumo";
+	color: white;
+}
+
+/* Header */
+.header {
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada elemen parent */
+	background-image: url("image/wall-1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.header::before {
+	content: ""; /* Menambahkan konten pseudo-element */
+	position: absolute; /* Menetapkan posisi absolut untuk pseudo-element */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Warna hitam dengan tingkat transparansi 0.5 (Anda dapat menyesuaikan nilai alpha) */
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 100px;
+	font-weight: 700;
+	margin-top: 150px;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+}
+.header p {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1;
+}
+
+/* Header Span */
+h1 span {
+	color: aquamarine;
+	font-size: 60px;
+	letter-spacing: 5px;
+}
+
+/* Card */
+.card {
+	width: 18rem;
+	margin: 20px;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-img-top {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.card-body {
+	background-color: #f8f9fa;
+}
+
+.card-text {
+	color: #495057;
+}
+
+/* About Section */
+.about {
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada elemen parent */
+	background-image: url("image/wall-about-1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.about::before {
+	content: ""; /* Menambahkan konten pseudo-element */
+	position: absolute; /* Menetapkan posisi absolut untuk pseudo-element */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Warna hitam dengan tingkat transparansi 0.5 (Anda dapat menyesuaikan nilai alpha) */
+}
+
+.about h1 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: 190px;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+}
+.about p {
+	color: #fff;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1;
+	font-weight: 200;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 30px;
+}
+.about.hidden {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s, transform 1s;
+}
+
+.about.animate__animated.animate__fadeInRight {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Menu Section */
+.menu {
+	background-color: #141009;
+}
+.menu-title {
+	font-family: "Agbalumo";
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+}
+.food {
+	font-family: "Fatal";
+	font-size: 30px;
+	color: white;
+	font-weight: 300;
+	position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+	z-index: 1;
+}
+
+/* Font Face */
+@font-face {
+	font-family: "Agbalumo";
+	src: url(font/Agbalumo-Regular.ttf);
+}
+@font-face {
+	font-family: "Fatal";
+	src: url(font/Fatal-Fighter.ttf);
+}
+
+/* Media QUERY */
+@media only screen and (max-width: 1400px) {
+	.header h1 {
+		color: #fff;
+		font-size: 90px;
+		font-weight: 700;
+		margin-top: 150px;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+	}
+	.header p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 400;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1;
+	}
+
+	/* Header Span */
+	h1 span {
+		color: aquamarine;
+		font-size: 50px;
+		letter-spacing: 5px;
+	}
+}
+
+/* Media query untuk mobile dengan lebar layar kurang dari 480px */
+@media only screen and (max-width: 1200px) {
+	.header h1 {
+		color: #fff;
+		font-size: 70px;
+		font-weight: 700;
+		margin-top: 250px;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+	}
+	.header p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 400;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1;
+	}
+
+	/* Header Span */
+	h1 span {
+		color: aquamarine;
+		font-size: 40px;
+		letter-spacing: 5px;
+	}
+}
+
+/* Media Query */
+@media only screen and (max-width: 994px) {
+	.header h1 {
+		color: #fff;
+		font-size: 60px;
+		font-weight: 700;
+		margin-top: 250px;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+	}
+	.header p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+		font-size: 10px;
+		font-weight: 400;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1;
+	}
+
+	/* Header Span */
+	h1 span {
+		color: aquamarine;
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+}
+
+@media only screen and (max-width: 994px) {
+	.header h1 {
+		color: #fff;
+		font-size: 60px;
+		font-weight: 700;
+		margin-top: 250px;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+	}
+	.header p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+		font-size: 10px;
+		font-weight: 400;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1;
+	}
+
+	/* Header Span */
+	h1 span {
+		color: aquamarine;
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.header h1 {
+		color: #fff;
+		font-size: 60px;
+		font-weight: 700;
+		margin-left: 20px;
+		margin-top: 250px;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1; /* Menetapkan z-index untuk menempatkan tulisan di atas pseudo-element */
+	}
+	.header p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		color: #fff;
+		padding-left: 30px;
+		padding-right: 10px;
+		font-size: 15px;
+		font-weight: 400;
+		position: relative; /* Menambahkan properti position untuk menetapkan posisi pada tulisan */
+		z-index: 1;
+	}
+
+	/* Header Span */
+	h1 span {
+		color: aquamarine;
+		margin-left: 10px;
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+}
