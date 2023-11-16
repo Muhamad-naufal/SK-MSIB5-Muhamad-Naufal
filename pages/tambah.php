@@ -179,34 +179,6 @@
     <script src="../components/dist/js/pages/dashboard2.js"></script>
     <script src="https://kit.fontawesome.com/25db4f44a1.js" crossorigin="anonymous"></script>
     <script>
-        function validateForm() {
-            // Get the value of kode_makanan
-            var kodeMakanan = document.getElementById("kode_makanan").value;
-
-            // Perform an AJAX request to check if the kode_makanan already exists
-            $.ajax({
-                type: 'POST',
-                url: '../function/check_kode_makanan.php', // Create this PHP file to handle the check
-                data: {
-                    kode_makanan: kodeMakanan
-                },
-                success: function(response) {
-                    if (response === 'exists') {
-                        alert('Kode Makanan already exists. Please choose a different one.');
-                        return false; // Prevent form submission
-                    } else {
-                        // Continue with the form submission
-                        return true;
-                    }
-                },
-                error: function() {
-                    alert('Error checking Kode Makanan. Please try again.');
-                    return false; // Prevent form submission
-                }
-            });
-        }
-    </script>
-    <script>
         $(document).ready(function() {
             $("input").on("input", function() {
                 var allFilled = true;
