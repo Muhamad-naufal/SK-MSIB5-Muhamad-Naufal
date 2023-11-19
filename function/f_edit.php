@@ -15,7 +15,6 @@ $kategori = $_POST["kategori"];
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
-    // Rest of your code...
 } else {
     echo "Error: Missing or invalid 'id' parameter.";
     // Handle the error or redirect to an error page.
